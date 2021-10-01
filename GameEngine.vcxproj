@@ -145,10 +145,9 @@
     <ClCompile Include="src\init.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\window.cpp" />
-    <ClCompile Include="triangles.cpp" />
+    <ClCompile Include="src\triangles.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Math.h" />
     <ClInclude Include="src\init.h" />
     <ClInclude Include="src\window.h" />
   </ItemGroup>

@@ -1,4 +1,4 @@
-#include "src/init.cpp"
+#include "init.cpp"
 
 void DrawTriangle(float positions[], unsigned int dimensions, unsigned int shader) {
 	unsigned int buffer;
