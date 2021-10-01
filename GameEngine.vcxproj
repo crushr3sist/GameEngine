@@ -144,6 +144,9 @@
   <ItemGroup>
     <ClCompile Include="src\init.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\shaders\fragmentshader.cpp" />
+    <ClCompile Include="src\shaders\shaders.cpp" />
+    <ClCompile Include="src\shaders\vertexshader.cpp" />
     <ClCompile Include="src\window.cpp" />
     <ClCompile Include="src\triangles.cpp" />
   </ItemGroup>
