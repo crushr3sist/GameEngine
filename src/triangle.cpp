@@ -1,7 +1,5 @@
-#include "init.cpp"
-#include "shaders/fragmentshader.cpp"
-#include "shaders/shaders.cpp"
-#include "shaders/vertexshader.cpp"
+#include "triangle.h"
+#include "errHandles.cpp"
 
 
 void DrawTriangle(float positions[], unsigned int dimensions, unsigned int shader) {

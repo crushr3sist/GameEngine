@@ -8,8 +8,12 @@
 #include <cstdlib>
 
 
+
 bool initGLFW();
 bool initGLEW();
 int initaliseLibrary();
+
+
+
 static void ClearError();
 static bool CheckError(std::string function, std::string file, int line);

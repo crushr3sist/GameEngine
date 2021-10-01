@@ -1,6 +1,7 @@
-#include "init.h"
+
 #include "window.h"
-#include "triangles.cpp"
+#include "triangle.h"
+#include "shaders.h"
 
 int main() {
 	initaliseLibrary();

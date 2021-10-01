@@ -1,4 +1,4 @@
-#include "../init.h"
+#include "shaders.h"
 
 static unsigned int compileShader(unsigned int type, const std::string& source)
 {
@@ -11,11 +11,10 @@ static unsigned int compileShader(unsigned int type, const std::string& source)
 
 }
 
-static int createShader(const std::string& vertexShader, const std::string& fragmentShader)
-{
+static unsigned int createShader(const std::string& vertexShader, const std::string& fragmentShader){
 	unsigned int program = glCreateProgram();
 	unsigned int vertexShadersrc = compileShader(GL_VERTEX_SHADER, vertexShader);
-	unsigned int fragmentShadersrc = compileShader(GL_VERTEX_SHADER, fragmentShader);
+	unsigned int fragmentShadersrc = compileShader(GL_FRAGMENT_SHADER, fragmentShader);
 
 	glAttachShader(program, vertexShadersrc);
 	glAttachShader(program, fragmentShadersrc);
@@ -24,5 +23,7 @@ static int createShader(const std::string& vertexShader, const std::string& frag
 
 	glDeleteShader(program);
 
-	return program
+	return program;
 }
+
+
