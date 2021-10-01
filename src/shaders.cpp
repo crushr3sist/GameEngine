@@ -11,10 +11,10 @@ unsigned int compileShader(unsigned int type, const std::string& source)
 	return id;
 }
 
-unsigned int createShader(const std::string& vertexShader, const std::string& fragmentShader){
-	Error(unsigned int program = glCreateProgram());
-	unsigned int vertexShadersrc = compileShader(GL_VERTEX_SHADER, vertexShader);
-	unsigned int fragmentShadersrc = compileShader(GL_FRAGMENT_SHADER, fragmentShader);
+GLuint createShader(const std::string& vertexShader, const std::string& fragmentShader){
+	Error( GLuint program = glCreateProgram());
+	int vertexShadersrc = compileShader(GL_VERTEX_SHADER, vertexShader);
+	int fragmentShadersrc = compileShader(GL_FRAGMENT_SHADER, fragmentShader);
 
 	glAttachShader(program, vertexShadersrc);
 	glAttachShader(program, fragmentShadersrc);
