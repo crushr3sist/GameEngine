@@ -8,5 +8,5 @@
 
 unsigned int compileShader(unsigned int type, const std::string& source);
 
-GLuint createShader(const std::string& vertexShader, const std::string& fragmentShader);
+extern unsigned int CreateShader(std::string vertexShader, std::string fragmentShader);
 

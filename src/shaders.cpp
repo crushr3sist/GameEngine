@@ -11,19 +11,21 @@ unsigned int compileShader(unsigned int type, const std::string& source)
 	return id;
 }
 
-GLuint createShader(const std::string& vertexShader, const std::string& fragmentShader){
-	Error( GLuint program = glCreateProgram());
-	int vertexShadersrc = compileShader(GL_VERTEX_SHADER, vertexShader);
-	int fragmentShadersrc = compileShader(GL_FRAGMENT_SHADER, fragmentShader);
+extern unsigned int CreateShader(std::string vertexShader, std::string fragmentShader)
+{
+	unsigned int program = glCreateProgram();
+	unsigned int vs = compileShader(GL_VERTEX_SHADER, vertexShader);
+	unsigned int fs = compileShader(GL_FRAGMENT_SHADER, fragmentShader);
 
-	glAttachShader(program, vertexShadersrc);
-	glAttachShader(program, fragmentShadersrc);
-	glLinkProgram(program);
-	glValidateProgram(program);
-
-	glDeleteShader(program);
+	Error(glAttachShader(program, vs));
+	Error(glAttachShader(program, fs));
+	Error(glLinkProgram(program));
+	Error(glValidateProgram(program));
+	Error(glDeleteShader(vs));
+	Error(glDeleteShader(fs));
 
 	return program;
+
 }
 
 

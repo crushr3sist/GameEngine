@@ -27,7 +27,7 @@ int main() {
 	Window mainWindow;
 	mainWindow.WindowInstance(600, 800, "hello world");
 	glClearColor(0.2f, 0.3f, 0.8f, 1.0f);
-	unsigned int shader = createShader(VertexShader, FragmentShader);
+	unsigned int shader = CreateShader(VertexShader, FragmentShader);
 	float positions[] = {
 	-0.5f, -0.5f, 0.0f,
 	 0.5f, -0.5f, 0.0f,
