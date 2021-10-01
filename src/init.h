@@ -7,13 +7,13 @@
 #include <string>
 #include <cstdlib>
 
-
+#include "window.h"
+#include "triangle.h"
+#include "shaders.h"
 
 bool initGLFW();
 bool initGLEW();
 int initaliseLibrary();
-
-
 
 static void ClearError();
 static bool CheckError(std::string function, std::string file, int line);

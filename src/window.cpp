@@ -4,6 +4,10 @@
 
 void Window::WindowInstance(int windowHeight, int windowWidth, const char* windowTitle)
 {
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_COMPAT_PROFILE);
+
     window = glfwCreateWindow(windowHeight, windowWidth, windowTitle, NULL, NULL);
 
     if (!window) {
