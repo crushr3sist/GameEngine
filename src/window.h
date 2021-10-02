@@ -1,12 +1,5 @@
-#pragma once
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
-
-class Window {
-public:
-	GLFWwindow* window;
-	void WindowInstance(int windowHeight, int windowWidth, const char* windowTitle);
-	void update();
-	bool closed();
-	void clear();
-};
+//#pragma once
+//#include <GL/glew.h>
+//#include <GLFW/glfw3.h>
+//
+//GLFWwindow* InitaliseGLFW(int window_width, int window_height, int OpenGL_Version);

@@ -88,7 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GLFW\include;H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GLEW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GLFW\include;H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\KHR;H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
