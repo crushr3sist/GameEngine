@@ -144,18 +144,24 @@
   <ItemGroup>
     <ClCompile Include="src\errHandles.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\shaderImports.cpp" />
     <ClCompile Include="src\shaders.cpp" />
     <ClCompile Include="src\window.cpp" />
     <ClCompile Include="src\triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\errHandles.h" />
+    <ClInclude Include="src\shaderImports.h" />
     <ClInclude Include="src\shaders.h" />
     <ClInclude Include="src\triangle.h" />
     <ClInclude Include="src\window.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\shaders\FragmentShader.shader" />
+    <Text Include="src\shaders\VertexShader.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

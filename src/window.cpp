@@ -23,10 +23,10 @@ GLFWwindow* Window::WindowInstance(int windowHeight, int windowWidth, const char
     {
         std::cout << "glew was not initalised" << glewGetErrorString(err);
     }
-    else {
+    else 
+    {
         std::cout << "glew was initalised";
     }
-
     return window;
 }
 

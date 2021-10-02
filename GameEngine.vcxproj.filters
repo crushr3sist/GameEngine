@@ -30,6 +30,9 @@
     <ClCompile Include="src\errHandles.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\shaderImports.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\window.h">
@@ -44,8 +47,15 @@
     <ClInclude Include="src\errHandles.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\shaderImports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\shaders\FragmentShader.shader" />
+    <Text Include="src\shaders\VertexShader.shader" />
   </ItemGroup>
 </Project>
