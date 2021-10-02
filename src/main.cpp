@@ -1,32 +1,22 @@
-#include "gl3w.h"
-#include "GLFW/glfw3.h"
-#include <iostream>
-#include <string>
+#include "window.h"
 
 
 int main()
 {
-	if (!glfwInit())
-	{
-		std::cout << "glfw WAS NOT initalised :(\n";
-	}
-	else 
-	{
-		std::cout << "glfw WAS initalised :) \n";
-		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-		glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	Window mainWindow;
+	mainWindow.WindowInstance(600, 800, "hello world");
 
-	}
-	if (gl3wInit())
+	while (!mainWindow.closed())
 	{
-		printf("OpenGL %s, GLSL %s\n", glGetString(GL_VERSION), glGetString(GL_SHADING_LANGUAGE_VERSION));
+		mainWindow.clear();
+		/////////////////////////////
+		///your code goes here kek///
+		/////////////////////////////
+
+
+		mainWindow.update();
 	}
-	else 
-	{
-		//std::cout << "glfw WAS initalised :)\n";
-		printf("OpenGL %s, GLSL %s\n", glGetString(GL_VERSION), glGetString(GL_SHADING_LANGUAGE_VERSION));
-	}
+
 }
 
 

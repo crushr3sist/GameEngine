@@ -88,12 +88,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GLFW\include;H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\KHR;H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GLFW\include;H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GL\include\GL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GLFW\lib-vc2019;H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GLEW\lib\Release\Win32\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GL\lib\Release\Win32;H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GLFW\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -155,6 +155,9 @@
     <ClInclude Include="src\shaders.h" />
     <ClInclude Include="src\triangle.h" />
     <ClInclude Include="src\window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
