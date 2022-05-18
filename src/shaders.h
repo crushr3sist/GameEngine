@@ -3,7 +3,6 @@
 #include <string>
 #include <iostream>
 #include <glew.h>
-#include "errHandles.h"
 
 
 unsigned int compileShader(unsigned int type, const std::string& source);

@@ -142,7 +142,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\errHandles.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\shaderImports.cpp" />
     <ClCompile Include="src\shaders.cpp" />
@@ -150,7 +149,6 @@
     <ClCompile Include="src\triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\errHandles.h" />
     <ClInclude Include="src\shaderImports.h" />
     <ClInclude Include="src\shaders.h" />
     <ClInclude Include="src\triangle.h" />
