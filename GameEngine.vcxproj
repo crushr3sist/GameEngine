@@ -123,7 +123,11 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GL\include\GL;H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GLFW\include\GLFW;H:\game_dev\GameEngine\cpp\GameEngine\Dependencies\GL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>

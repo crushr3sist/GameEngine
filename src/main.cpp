@@ -38,20 +38,27 @@ int main() {
 
     VAO vao;
     vao.Bind();
-	
-	VBO vbo(positions, sizeof(positions));
-	EBO ebo(indices, sizeof(indices));
-	
-	vao.LinkVBO(vbo, 0);
-	
+
+    VBO vbo(positions, sizeof(positions));
+    EBO ebo(indices, sizeof(indices));
+
+    vao.LinkVBO(vbo, 0);
+	vao.Unbind();
+    vbo.Unbind();
+    ebo.Unbind();
+
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
     while (!mainWindow.closed()) {
 
         mainWindow.clear();
-		DrawTriangle(positions, 6, shader);			
-        vao.Bind();
+        DrawTriangle(positions, sizeof(indices), shader);
         mainWindow.update();
 
     }
-    
-
+	
+    vao.Delete();
+    vbo.Delete();
+    ebo.Delete();
+	
 }

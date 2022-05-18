@@ -1,16 +1,17 @@
 #include "shaders.h"
 
 
-unsigned int compileShader(unsigned int type,const std::string & source) {
+unsigned int compileShader(unsigned int type,
+    const std::string& source) {
     unsigned int id = glCreateShader(type);
-    const char * src = & source[0];
-    glShaderSource(id, 1, & src, nullptr);
+    const char* src = &source[0];
+    glShaderSource(id, 1, &src, nullptr);
     glCompileShader(id);
 
     return id;
 }
 
-unsigned int CreateShader(std::string vertexShader, std::string fragmentShader) {
+extern unsigned int CreateShader(std::string vertexShader, std::string fragmentShader) {
     int x = 1;
     unsigned int program = glCreateProgram();
     unsigned int vs = compileShader(GL_VERTEX_SHADER, vertexShader);

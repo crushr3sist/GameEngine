@@ -11,6 +11,6 @@ void DrawTriangle(float positions[], unsigned int dimensions, unsigned int shade
 	glVertexAttribPointer(0, dimensions, GL_FLOAT, GL_FALSE, sizeof(float) * dimensions, 0);
 
 	glUseProgram(shader);
-	glDrawArrays(GL_TRIANGLES, 0, 6);
+	glDrawArrays(GL_TRIANGLES, 0, sizeof(float) * dimensions);
 	glDeleteBuffers(1, &buffer);
 }
