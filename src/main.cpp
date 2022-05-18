@@ -21,13 +21,18 @@ int main()
 		 0.5f, -0.5f, 0.0f,
 		 0.0f,  0.5f, 0.0f
 	};
+
+	float positions2[] = {
+		-0.3f, -0.2f, 0.0f,
+		 0.4f, -0.5f, 0.0f,
+		 0.0f,  0.5f, 0.0f
+	};
 	while (!mainWindow.closed())
 	{
 		mainWindow.clear();
 		DrawTriangle(positions, 3, shader);
+		DrawTriangle(positions2, 3, shader);
 		mainWindow.update();
-		
-		
 		
 	}
 }
